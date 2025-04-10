@@ -26,7 +26,7 @@ namespace ChatClient.Net
         {
             if (!_client.Connected)
             {
-                _client.Connect("78.69.210.87", 7800);
+                _client.Connect("Server ip goes here", 7800);
                 PacketReader = new PacketReader(_client.GetStream());
 
                 if (!string.IsNullOrEmpty(username))
